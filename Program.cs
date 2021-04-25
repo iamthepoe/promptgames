@@ -10,8 +10,7 @@ namespace PromptGames
         {
             
          int menu = 0;
-         string resposta = "S";
-
+            
             ShowMenu();
             menu = int.Parse(Console.ReadLine());
             switch(menu){
