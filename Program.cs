@@ -8,9 +8,10 @@ namespace PromptGames
 
         static void Main(string[] args)
         {
-            
+         bool saiu = false;
          int menu = 0;
-            
+          do{
+            Console.Clear();
             ShowMenu();
             menu = int.Parse(Console.ReadLine());
             switch(menu){
@@ -36,15 +37,16 @@ namespace PromptGames
 
                 case 4:
                  Console.Clear();
+                 saiu = true;
                 break;
             }
-
+          }while(saiu!=true);
         }
         static void ShowMenu(){
-            Console.WriteLine("===================");
+            Console.WriteLine("======================================");
             Console.WriteLine("- - - Jogos de CMD - - -");
             Console.WriteLine("[1] JoKenPo (VS IA)\n[2] JoKenPo (PvP)\n[3] Jogo do número\n[4] Sair");
-            Console.WriteLine("===================");
+            Console.WriteLine("======================================");
         }
         
         static void Choose(){
