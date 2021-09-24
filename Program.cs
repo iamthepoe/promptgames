@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace PromptGames
 {
@@ -72,6 +72,7 @@ namespace PromptGames
                     Console.Clear();
                     Choose();
                     P1Number = int.Parse(Console.ReadLine());
+                    Console.Clear();
                     while(P1Number<1 || P1Number>3){
                         Console.Write("Escolha um número válido: ");
                         P1Number = int.Parse(Console.ReadLine());
@@ -232,6 +233,7 @@ namespace PromptGames
                 Console.Write("Deseja continuar? [S/N]: ");
                 resposta = Console.ReadLine();
                 Console.Clear();
+                PCNumber = RandNum.Next(1,100);
                 TentativasRestantes = 9;
                 Tentativas = 1;
             }
